@@ -1,0 +1,101 @@
+.modal__overlay {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__overlay-inner {
+  background: white;
+  width: 700px;
+  height: 550px;
+  padding: 1.5rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 1.3rem;
+}
+
+.modal__overlay-inner .modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.modal__overlay-inner .modal__close:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.modal__overlay-inner .modal__inner-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal__overlay-inner .modal__inner-box img {
+  margin-right: 20px;
+  width: 150px;
+  height: 200px;
+}
+
+.modal__overlay-inner .modal__inner-box h3 {
+  margin-top: 10px;
+  color: green;
+}
+
+.modal__overlay-inner .modal__inner-box h4 {
+  color: blue;
+}
+
+.modal__overlay-inner .modal__inner-box button {
+  outline: none;
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #24a0ed;
+  color: white;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+}
+
+.modal__overlay-inner .modal__description {
+  margin-top: 2rem;
+  font-size: 13px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 650px) {
+  .modal__overlay {
+    min-height: 80vh;
+  }
+
+  .modal__overlay-inner {
+    width: 500px;
+    height: 350px;
+    font-size: 0.5rem;
+  }
+
+  .modal__overlay-inner .modal__inner-box {
+    margin-top: 15px;
+  }
+
+  .modal__overlay-inner .modal__inner-box img {
+    width: 150px;
+    height: 100px;
+  }
+}
